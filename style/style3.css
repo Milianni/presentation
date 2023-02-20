@@ -1,0 +1,143 @@
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+nav a
+{
+    font-family: dayrom,serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+header nav ul 
+{
+    list-style-type: none;
+    display: flex;
+}
+#banniere_image
+{
+
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('../images/ban\ copie.jpeg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    text-align: center;
+    background-color: rgba(158, 143, 169, 0.8);
+   
+    font-size: 0.8em;
+    
+}
+body
+{
+    background: url('../images/fond_jaune.png') repeat;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+header h1
+{
+    font-family: 'dayrom',serif ;
+    font-size: 2.1em;
+    margin-top: 0px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+#choices li{
+    display:inline-block;
+    margin: 10px;
+    text-align: center;
+    text-size-adjust:15px;
+
+}
+#answer li{
+    display:inline-block;
+    margin: 10px;
+    text-align: justify;
+    size:40px;
+    color: blue;
+}
+#disabled
+{
+    opacity: 0.3;
+}
+.cursor{
+    cursor:pointer;
+}
+
+footer,nav, ul
+{
+
+    
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+  
+    padding-bottom: 205px;
+}
+footer
+{
+    display: flex;
+   margin-bottom: 5px;
+   margin-right: 10px;
+
+}
+footer h1
+{
+    font-size: 1.1em;
+}
+#icone
+{
+    width: 28%;
+}
+#web-langage
+{
+    display:flex;
+    width: 35%;
+}
+#navf li
+{   display:flex;
+    padding: auto;
+    margin-right: 15px;
+}
+/* version par défaut: sur grand écran */
+.menu { width: 30em; /* etc. */ }
+
+/* écran plus petit: on passe le menu en horizontal */
+@media (max-width: 100em) {
+	.menu { width: 100%; }
+	.menu { flex-direction:column; }
+	
+}
+
+/* écran encore plus petit: on cache le menu */
+@media (max-width: 50em) {
+	.menu { display: none; }
+}

@@ -1,0 +1,118 @@
+head {
+    margin: top 30px ;
+
+}
+body
+    { background-image: url('../images/developers-gif-showcase.gif');
+     background-repeat: repeat; 
+     background-position: 6em;
+  
+    
+}
+ article,section
+ {
+    height: auto;
+    text-align:center;
+    
+
+}
+section h1 , h2
+ {
+    text-align:center;
+     color:aquamarine;
+ }
+ 
+#username{
+    text-align: center;
+    width: 300px;
+    margin-left: 420px;
+    color:blueviolet;
+}
+#message
+{   text-align: center;
+    width: 800px;
+    margin-left: 220px;
+    max-height: 500px;
+    color: azure;
+}
+#button
+{
+    margin-left: 10px;
+}
+
+ article ,h2 
+ {
+    text-align:center;
+    color:aquamarine;
+       
+ }
+ #intercaler 
+ {
+    min-height: 50px;
+ }
+ #messages
+ {   text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    color:blue;
+    min-height: 50%;
+   
+}
+ul 
+{
+  
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  
+     padding-top: 25px;
+}
+li
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+#banniere_image
+{
+    margin: 1em 0em 5em;
+    height: 200px;
+    border-radius: 5px;
+    background: url('../images/giphy.gif');
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    display: flex;
+
+}
+nav li
+{
+    margin-right: 15px;
+}
+nav a 
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+/* version par défaut: sur grand écran */
+.menu { width: 30em; /* etc. */ }
+
+/* écran plus petit: on passe le menu en horizontal */
+@media (max-width: 100em) {
+	.menu { width: 100%; }
+	.menu li { display: inline-block; }
+	/* etc. */
+}
+
+/* écran encore plus petit: on cache le menu */
+@media (max-width: 50em) {
+	.menu { display: none; }
+}
